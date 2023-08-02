@@ -1,0 +1,14 @@
+<div class="project-backdrop" id="background-image">
+  <div class="project-container">
+    <h1>DevSecOps - API</h1>
+    <form #sumOfNumbers="ngForm" (submit)="sumNumbers()">
+      <div class="input-container">
+        <input class="input-element" type="number" id="firstNumber" placeholder="Type first number" [(ngModel)]="firstNumber"/>
+        <h1 class="sum-sign">+</h1>
+        <input class="input-element" type="number" id="secondNumber" placeholder="Type second number" [(ngModel)]="secondNumber"/>
+      </div>
+      <button>Calculate</button>
+    </form>
+    <div class="result-element">{{result}}</div>
+  </div>
+</div>
